@@ -1,0 +1,42 @@
+[2026-03-06 19:14:06] MiniOS Kernel Booting...
+[2026-03-06 19:14:06] MemoryManager initialized with 1024 KB.
+[2026-03-06 19:14:06] FileSystem initialized.
+[2026-03-06 19:14:11] System shutting down...
+[2026-03-06 19:14:11] MiniOS Shutdown Complete.
+[2026-03-06 19:15:05] MiniOS Kernel Booting...
+[2026-03-06 19:15:05] MemoryManager initialized with 1024 KB.
+[2026-03-06 19:15:05] FileSystem initialized.
+[2026-03-06 19:15:24] Shell command: create_process P1 5 1
+[2026-03-06 19:15:24] Process P1 created in NEW state. Transitions to READY.
+[2026-03-06 19:15:24] Process P1 added to Ready Queue.
+[2026-03-06 19:15:24] Shell command: create_process P2 3 2
+[2026-03-06 19:15:24] Process P2 created in NEW state. Transitions to READY.
+[2026-03-06 19:15:24] Process P2 added to Ready Queue.
+[2026-03-06 19:15:24] Shell command: create_process P3 10 3
+[2026-03-06 19:15:24] Process P3 created in NEW state. Transitions to READY.
+[2026-03-06 19:15:24] Process P3 added to Ready Queue.
+[2026-03-06 19:16:05] Shell command: schedule rr
+[2026-03-06 19:16:05] Starting scheduler...
+[2026-03-06 19:16:05] Process P1 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P2 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P3 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P1 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P2 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P3 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P1 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P3 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P3 is RUNNING in RR.
+[2026-03-06 19:16:05] Process P3 is RUNNING in RR.
+[2026-03-06 19:16:18] Shell command: schedule sjf
+[2026-03-06 19:16:18] Starting scheduler...
+[2026-03-06 19:16:31] Shell command: schedule fcfs
+[2026-03-06 19:16:31] Starting scheduler...
+[2026-03-06 19:16:49] Shell command: block_process P3
+[2026-03-06 19:16:49] Process P3 blocked. Transitioned to WAITING.
+[2026-03-06 19:17:02] Shell command: system_status
+[2026-03-06 19:17:36] Shell command: unblock_process P3
+[2026-03-06 19:17:36] Process P3 added to Ready Queue.
+[2026-03-06 19:17:36] Process P3 unblocked. Transitioned to READY.
+[2026-03-06 19:17:47] Shell command: mem_alloc 128
+[2026-03-06 19:17:47] Allocated 128 KB at address 0
+[2026-03-06 19:17:47] Shell command: memory_map
