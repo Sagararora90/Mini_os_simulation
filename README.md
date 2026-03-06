@@ -4,6 +4,7 @@ An interactive, modular simulation of core Operating System components written i
 
 ## Architecture
 
+```text
                  +------------------+
                  |      Shell       |
                  |  Command Parser  |
@@ -22,6 +23,7 @@ An interactive, modular simulation of core Operating System components written i
                       +----------------+
                       | System Monitor |
                       +----------------+
+```
 
 ## Demo
 
